@@ -1,0 +1,33 @@
+.sidebar-toggle {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--gray);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.4s;
+
+  &:hover {
+    color: var(--primary);
+  }
+
+  &.sidebar-close {
+    position: absolute;
+    bottom: 30px;
+    left: 250px;
+    background: var(--primary);
+    color: white;
+    padding: 20px 50px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: 0.4s;
+
+    &:hover {
+      background-color: var(--primary--hover);
+      color: var(--primary);
+    }
+
+  }
+}

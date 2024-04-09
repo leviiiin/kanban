@@ -1,0 +1,42 @@
+.theme-toggle {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+
+  &__img {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__label {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background: var(--primary);
+    border-radius: 34px;
+    cursor: pointer;
+
+    .toggle-button {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 14px;
+      height: 14px;
+      background: #fff;
+      border-radius: 50%;
+      transition: transform 0.3s;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox:checked + &__label .toggle-button {
+    transform: translateX(20px);
+  }
+}
